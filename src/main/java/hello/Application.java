@@ -3,6 +3,10 @@ package hello;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.password.StandardPasswordEncoder;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
@@ -27,6 +31,11 @@ public class Application {
         driverManagerDataSource.setUsername("root");
         driverManagerDataSource.setPassword("karolm22");
         return driverManagerDataSource;
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return  NoOpPasswordEncoder.getInstance();
     }
 }
 
