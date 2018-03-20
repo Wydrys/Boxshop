@@ -25,7 +25,7 @@ public class Application {
         driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
         driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/sda");
         driverManagerDataSource.setUsername("root");
-        driverManagerDataSource.setPassword("root");
+        driverManagerDataSource.setPassword("karolm22");
         return driverManagerDataSource;
     }
 }
