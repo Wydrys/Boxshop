@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>Type your name</p>
+
+<table>
+    <th:block th:each="product : ${products}">
+        <tr>
+            <td th:text="${product.productId}">...</td>
+            <td th:text="${product.price}">...</td>
+            <td th:text="${product.category}">...</td>
+            <td th:text="${product.name}">...</td>
+        </tr>
+    </th:block>
+</table>
+
+</body>
+</html>
