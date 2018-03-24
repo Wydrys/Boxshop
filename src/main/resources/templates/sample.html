@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Sample</title>
+    <head th:replace="common/header :: common-header" />
 </head>
 <body>
+<!-- Static navbar -->
+<div th:replace="common/header :: navbar" />
 <p>Message</p>
 <p th:text="${message}"></p>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<div th:replace="common/header :: body-bottom-scripts" />
 </body>
 </html>
