@@ -29,7 +29,7 @@ public class Application {
         driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
         driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/sda");
         driverManagerDataSource.setUsername("root");
-        driverManagerDataSource.setPassword("karolm22");
+        driverManagerDataSource.setPassword("tiruriru727");
         return driverManagerDataSource;
     }
 
