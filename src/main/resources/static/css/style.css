@@ -9,3 +9,25 @@ body {
 .box {
   border: 5px solid lightpink;
 }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.carousel-caption{
+  color: #0f0f0f;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #8c8c8c;
+}
+
+.text-muted{
+  color: white;
+}
